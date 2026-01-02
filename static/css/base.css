@@ -1,4 +1,4 @@
-
+/* 
 body {
     font-family:'Source Sans Pro', sans-serif;
     font-size: 18px;
@@ -36,4 +36,135 @@ font-weight:	400;
 }
 .post-entry	h2	a:hover	{
 color: red;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+header {
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+}
+
+header h1 a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 700;
+    transition: opacity 0.3s;
+}
+
+header h1 a:hover {
+    opacity: 0.8;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.nav-right a {
+    background: #667eea;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.nav-right a:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+p, form {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #5568d3;
+}
+
+button {
+    background: #f56565;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #e53e3e;
+    transform: translateY(-1px);
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: #2d3748;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post-entry h2 a:hover {
+    color: #667eea;
+}
+
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+    color: #718096;
 }
